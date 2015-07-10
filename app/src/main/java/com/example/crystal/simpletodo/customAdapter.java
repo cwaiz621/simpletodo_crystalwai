@@ -69,9 +69,10 @@ public class customAdapter extends ArrayAdapter<String>{
 
             final ViewSwitcher TaskEdit = (ViewSwitcher) rowView.findViewById(R.id.vs);
 
+
 /*When item is checked disable row item, and set completion date. When item is unchecked,
 enable row item and reset the creation date*/
-            cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            /*cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     int pos = (int) cb.getTag();
@@ -88,6 +89,7 @@ enable row item and reset the creation date*/
                     }
                 }
             });
+            */
 
 //When a textview task title is pressed, textview changes to edit text to enable title change
             TaskEdit.setOnClickListener(new View.OnClickListener() {
